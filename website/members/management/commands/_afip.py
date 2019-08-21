@@ -9,7 +9,7 @@ from django.conf import settings
 
 CACHE = "/tmp/pyafip-cache-real"
 CONFIG_PDF = {
-    'LOGO': "static/images/acpyar.png",
+    'LOGO': "static/images/Logo TGD padres Madryn.jpg",
     'EMPRESA': "Asociación Civil Python Argentina",
     'MEMBRETE1': "Chile 1155 piso 1 - CABA",
     'CUIT': "CUIT 30-71563912-9",

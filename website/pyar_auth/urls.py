@@ -5,7 +5,7 @@ from django.contrib.auth.views import (
     PasswordResetCompleteView,
     PasswordResetDoneView,
     LogoutView
-    )
+)
 from pyar_auth import views
 
 urlpatterns = [
@@ -13,7 +13,7 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     path('cambio-clave/', views.PasswordResetView.as_view(), name='password_reset'),
     path('cambio-clave/finalizado', PasswordResetDoneView.as_view(), name='password_reset_done'),
-    path('<uidb64>/<token>/', 
+    path('<uidb64>/<token>/',
          views.PasswordResetConfirmView.as_view(),
          name='password_reset_confirm'),
     path('cambio-clave-completo/',

@@ -36,11 +36,16 @@ h4
         margin-bottom: 25px;
     }
 /* end h1 group */
-p { line-height: 1.6em; }
+p { 
+    line-height: 1.6em;
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #666;
+}
 /* img */
 img
     {
-        max-width: 100%;
+        /* max-width: 100%; */
         height: auto;
     }
 /* img */

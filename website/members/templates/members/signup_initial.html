@@ -1,12 +1,19 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
     <div class="container">
         {% block heading %}
-        <h1 class="text-center">Quiero asociarme a Python Argentina</h1>
-        <p>Este Formulario es para asociarse a la Asociación Civil Python Argentina.  ¡Te va a llevar menos de 2 minutos!<br><br>
-            Cualquier duda o consulta podés escribir a <a href="mailto:presidencia@ac.python.org.ar">presidencia@ac.python.org.ar</a>.
-            <hr />
+        <h1>Quiero asociarme</h1>
+        <p>
+            <img src="{% static 'images/Aprende A Volar.jpg' %}" style="width:50%; display: block; margin: auto; padding: 30px">
+        </p>
+        <p>
+           Este Formulario es para asociarse a la Asociación Civil Aprende a Volar.  ¡Te va a llevar menos de 2 minutos!
+           <br>
+           Asociandote, estaras ayudando a ninos con TGD/TEA de Puerto Madryn.
+           <hr />
+        </p>
         {% endblock %}
         <div class="inner-content">
             {% block inner-content %}
